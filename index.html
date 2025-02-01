@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <button id="toggle-mode" class="toggle-button">🌙 Modo Oscuro</button>
+    <title>Presupuestador de Construcción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <img src="casco.png" alt="Logo" class="logo">
+        <h1>Diedro Soluciones</h1>
+    </header>
+
+    <!-- Cotizador -->
+    <section class="cotizador">
+        <h2>Cotizador de mano de Obra</h2><p id="Fecha">(Actualizado-Febrero-2025 - Salta Capital)</p>
+        <div class="formulario">
+            <label for="actividad">Selecciona una actividad:</label>
+            <select id="actividad">
+                <option value="24000">Cabado de Bases (suelo blando) - por m³</option>
+                <option value="32000">Armado y llenado de bases - por m³</option>
+                <option value="23000">Armado y llenado de columnas - por ml</option>
+                <option value="25000">Armado y llenado de vigas de arrastre - por ml</option>
+                <option value="27000">Armado y llenado de vigas aéreas - por ml</option>
+                <option value="16000">Pared ladrillón 12 x 30 - por m²</option>
+                <option value="18000">Pared de bloque 18 x 40 - por m²</option>
+                <option value="18500">Pared de ladrillo 12 x 26 - por m²</option>
+                <option value="24000">Pared adobón visto - por m²</option>
+                <option value="6000">Capa aisladora 18 x 2cm - por ml</option>
+                <option value="13000">Reboque grueso x 2 cm - por m²</option>
+                <option value="5500">Reboque fino - por m²</option>
+                <option value="14000">Contrapiso x 5cm - por m²</option>
+                <option value="19000">Contrapiso x 10cm - por m²</option>
+                <option value="16000">Colocación de cerámico - por m²</option>
+                <option value="22000">Colocación de porcelanato - por m²</option>
+                <option value="22000">Colocación de aberturas (sin mochetas) - por m²</option>
+                <option value="41000">Losa (Col. de viguetas, ladrillones y llenado) - por m²</option>
+                <option value="9000">Relleno (Tierra o similar) - por m³</option>
+                <option value="35000">Techado Chapa (Perfilería, aislante y chapa)
+                    - por m²</option>
+                <option value="350">Corte de Pasto) - por m² </option>
+            </select>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" placeholder="Ej: 10" min="0">
+            <button onclick="calcularPresupuesto()">Calcular</button>
+        </div>
+        <div class="resultado">
+            <h3>Total:</h3>
+            <p id="total">$0</p>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contacto">
+        <h2>Contacto</h2>
+        <p>¿Necesitas un presupuesto personalizado? ¡Contactanos!</p>
+        <p>Teléfono: <a href="https://wa.me/5493874638640?text=Consulta%20web:%20Quisiera%20solicitarle%20un%20presupuesto%20de:%20">3874638640</a></p>
+    </section>
+    <!-- Sobre Nosotros -->
+    <section class="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En <strong>Diedro Soluciones</strong>, somos un equipo de jóvenes apasionados por la construcción. 
+            Además de ofrecer servicios de calidad, estamos comprometidos con nuestro crecimiento profesional contamos tambien con 
+            estudiantes universitarios de diversas carreras. Al elegirnos, no solo obtienes un servicio confiable, 
+            sino que también apoyas a jóvenes que trabajan duro para construir un futuro mejor.
+        </p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2025 - Diedro Soluciones. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
