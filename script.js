@@ -25,6 +25,7 @@ const actividades = {
     plomeria: [
         { nombre: "Instalación de cañerías - por ml", valor: 15000 },
         { nombre: "Reparación de fugas - por hora", valor: 12000 },
+        { nombre: "Colocacion de artefactos - por unidad", valor: 30000 },
     ],
     electricidad: [
         { nombre: "Instalación eléctrica básica - por ml", valor: 10000 },
