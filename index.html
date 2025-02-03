@@ -7,7 +7,24 @@
     <link rel="icon" href="casco.png" type="image/png">
     <title>Diedro :: Tu Cotizador de Construcción</title>    
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    // Inicializar todos los carruseles
+    document.addEventListener('DOMContentLoaded', function () {
+        const swipers = document.querySelectorAll('.swiper');
+        swipers.forEach(swiper => {
+            new Swiper(swiper, {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
+    });
+</script>
 <body>
     <!-- Encabezado -->
     <header>
@@ -47,17 +64,21 @@
         </div>
         <div class="resultado">
             <h3>Total:</h3>
-            <p id="total">$0</p>
+            <p id="total">$0</p>            
+        </div>
+        <div class="nota1">
+            <p id="fecha">*Este es un precio estimativo y puede variar según las características específicas de tu proyecto.</p>
         </div>
     </section>
 
     <!-- Contacto -->
     <section class="contacto">
-        <h2>¿Listo para construir?</h2>
-        <p>Si sos un particular, ingeniero o arquitecto y necesitas mano de obra para construir,refaccionar o ampliar en <strong>Diedro Soluciones</strong>, estamos listos para ayudarte a hacer realidad tu proyecto. ¡Solicita tu presupuesto personalizado ahora!</p>
+        <h2>¿Necesitas un presupuesto exacto o tienes preguntas?</h2>
         <a href="https://wa.me/5493874638640?text=Consulta%20web:%20Quisiera%20solicitarle%20un%20presupuesto%20de:%20" class="cta-button">
             <img src="whatsapp.png" alt="WhatsApp" class="whatsapp-icon"> Contactar por WhatsApp
         </a>
+        <p>Si sos un particular, ingeniero o arquitecto y necesitas mano de obra para construir, refaccionar o ampliar en <strong>Diedro Soluciones</strong>, estamos listos para ayudarte a hacer realidad tu proyecto. ¡Solicita tu presupuesto personalizado ahora!</p>
+        
         <p class="alternativo">escribinos al <a href="https://wa.me/5493874638640?text=Consulta%20web:%20Quisiera%20solicitarle%20un%20presupuesto%20de:%20">387 463 8640</a>.</p>
     </section>
 
@@ -102,6 +123,104 @@
             </tbody>
         </table>
         <p class="nota">Nota: Salarios vigentes a partir del 01 de Enero 2025 y corresponden a Salta Capital. Fuente: UOCRA.</p>
+    </section>
+    <!-- Sección de Proyectos Realizados -->
+    <section class="proyectos">
+        <h2>Algunos de nuestros Proyectos</h2>
+        <div class="proyectos-container">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <h3>Proyecto: Tolar Grande</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="proyecto1a.jpeg" alt="Casa Moderna - Foto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto1b.jpeg" alt="Casa Moderna - Foto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto1c.jpeg" alt="Casa Moderna - Foto 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto1d.jpeg" alt="Casa Moderna - Foto 4">
+                        </div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <h3>Proyecto: El Pórtico</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="proyecto2a.jpeg" alt="Casa Moderna - Foto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto2b.jpeg" alt="Casa Moderna - Foto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto2c.jpeg" alt="Casa Moderna - Foto 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto2d.jpeg" alt="Casa Moderna - Foto 4">
+                        </div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="proyecto">
+                <h3>Proyecto: Falcon Drilling</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="proyecto3a.jpeg" alt="Casa Moderna - Foto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto3b.jpeg" alt="Casa Moderna - Foto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto3c.jpeg" alt="Casa Moderna - Foto 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto3d.jpeg" alt="Casa Moderna - Foto 4">
+                        </div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="proyecto">
+                <h3>Proyecto: Arborecer</h3>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="proyecto4a.jpeg" alt="Casa Moderna - Foto 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto4b.jpeg" alt="Casa Moderna - Foto 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto4c.jpeg" alt="Casa Moderna - Foto 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="proyecto4d.jpeg" alt="Casa Moderna - Foto 4">
+                        </div>
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>    
     </section>
     <!-- Sobre Nosotros -->
     <section class="sobre-nosotros">
